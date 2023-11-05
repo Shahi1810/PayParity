@@ -1,0 +1,15 @@
+<div>
+  <nav class="nav nav-masthead justify-content-center float-md-right">
+  <a class="nav-link" aria-current="page" href="/">Home</a>
+  <a href="/PayParity" class="nav-link ">Why PayParity?</a>
+  <!--<a href="/resources" class="nav-link ">Resources</a>-->
+  <a class="nav-link " href="/blogs">Community</a>
+  <% if(!currentUser) { %>
+  <a class="nav-link " href="/login">Login</a>
+  <a class="nav-link " href="/register">Register</a>
+  <% } else { %>
+  <a href="/analytics" class="nav-link ">Salary Analytics</a>
+    <a class="nav-link " href="/logout">Logout</a>
+  <% } %>
+</nav>
+</div>

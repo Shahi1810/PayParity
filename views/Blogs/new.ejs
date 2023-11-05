@@ -1,0 +1,33 @@
+<% layout('layouts/boilerplate') %>
+    <div class="row">
+        <h1 class="text-center text-light">New Blog</h1>
+        <div class="col-6 offset-3">
+            <form action="/blogs" method="post" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label text-light" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="blog[title]" required>
+                    <div class="valid-feedback">
+                        Looks Good!
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-light" for="image">Image Url(any opensource image)</label>
+                    <input class="form-control" type="text" id="image" name="blog[image]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-light" for="description">Description</label>
+                    <textarea class="form-control" type="text" id="description" name="blog[description]" required></textarea>
+                    <div class="valid-feedback">
+                        Looks Good!
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-success">Submit Blog</button>
+                </div>
+                </form>
+            <a href="/blogs/">All Blogs</a>
+        </div>
+    </div>

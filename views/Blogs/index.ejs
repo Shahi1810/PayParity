@@ -1,0 +1,12 @@
+<% layout('layouts/boilerplate') %>
+    <h1 class="text-light">Blog</h1>
+    <div> <a class="btn btn-secondary mb-3 text-light" href="/blogs/new">Add a Blog</a> </div>
+        <% for(let blog of blogs){ %>
+            <div class="card  mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><%= blog.title %></h5>
+                    <p class="card-text"><%= blog.description %></p>
+                    <a href="/blogs/<%= blog._id %>" class="btn btn-primary">View <%= blog.title %></a>
+                  </div>
+            </div>
+            <% } %>

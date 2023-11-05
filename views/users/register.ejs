@@ -1,0 +1,89 @@
+<% layout('layouts/boilerplate') %>
+<h1 class="text-light">Register</h1>
+<form action="/register" method="post" class="validated-form" novalidate>
+
+    <div class="mb-3">
+        <label class="form-label text-light" for="name">Your Name</label>
+        <input class="form-control" type="text" id="name" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label text-light" for="username">Username</label>
+        <input class="form-control" type="text" id="username" name="username" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label text-light" for="email" >Email</label>
+        <input class="form-control" type="email" id="email" name="email" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label text-light" for="phone">Your Phone Number</label>
+        <input class="form-control" type="number" id="phone" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label text-light" for="password">Set a Password</label>
+        <input class="form-control" type="password" id="password" name="password" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+   <!-- <div class="mb-3">
+        <label class="form-label text-light" for="company">Your Organization</label>
+        <input class="form-control" type="text" id="company" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label text-light" for="job">Your Designation</label>
+        <input class="form-control" type="text" id="job" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label text-light" for="Salary">Your Annual Salary</label>
+        <input class="form-control" type="number" id="Salary" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label text-light" for="experience">Your Experience(in years)</label>
+        <input class="form-control" type="number" id="experience" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>-->
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+        <label class="form-check-label text-light" for="flexCheckDefault" >
+          I agree to the T&Cs of AccessEd
+        </label>
+        <div class="invalid-feedback">Please agree to our T&Cs to proceed!</div>
+      </div>
+
+    <h1 class="text-light"></h1>
+    <div class="mb-3">
+        <button class="btn btn-success">Register</button>
+    </div>
+</form>
